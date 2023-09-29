@@ -1,0 +1,385 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #1c92d2;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #f2fcfe, #1c92d2);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #f2fcfe, #1c92d2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: #13010140;
+  border-radius: 8px;
+  box-shadow: 2px 2px 7px 1px rgb(0, 0, 0);
+  padding: 20px;
+  width: 23vw;
+  /* height: 50vh; */
+  text-align: center;
+}
+
+.form {
+  margin-top: 20px;
+}
+
+h2 {
+  color: #333;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #d4cccc55;
+  font-size: 14px;
+}
+
+.upload-label {
+  font-size: 14px;
+  color: #410404;
+  margin-top: 20px;
+  padding: 10px;
+}
+.upload-label:hover{
+  background-color: #0000004f;
+  color: white;
+}
+
+.upload-input {
+  display: none;
+}
+
+.register-button {
+  background-color: #041d37;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.register-button:hover {
+  background-color: #0056b3;
+}
+
+/* Home Page Stylings */
+
+
+.home{
+  background: #E0EAFC;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #CFDEF3, #E0EAFC);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #CFDEF3, #E0EAFC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Chat-Body{
+  background: #1c92d2;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #f2fcfe, #1c92d2);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #f2fcfe, #1c92d2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+  width: 100vw;
+  height: 100vh;
+  box-shadow: 2px 1px 10px 1px black;
+  border-radius: 5px;
+  display: flex;
+  overflow: hidden;
+}
+.sidebar{
+  flex: 0.5;
+  border-right: 0.5px solid rgb(140, 140, 140);
+}
+
+
+
+
+/* NavBar Stylings */
+
+.navbar{
+  color: rgb(17, 16, 16);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px;
+  border-bottom: 0.5px solid rgb(62, 62, 62);
+  height: 5vh;
+}
+.logo-section h3{
+  margin: 5px;
+  font-size: 17px;
+  color: #000000;
+  font-weight: bolder;
+}
+
+.user-section{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+/* .logo-section img{
+  width:40px;
+  height: 6vh;
+  background-color: rgb(8, 0, 0);
+  border-radius: 10%;
+  overflow: hidden;
+} */
+.user-section span{
+  font-size: 15px;
+}
+.user-section button{
+  background-color: rgba(0, 0, 0, 0.832);
+  padding: 5px;
+  color: white;
+  font-size: 12px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.user-section button:hover{
+  background-color: rgb(248, 248, 248);
+  color: black; 
+}
+.search{
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.searchForm input{
+  padding: 8px;
+  font-size: 15px;
+  width: 100%;
+  background-color: #07000049;
+  border: none;
+  color: black;
+  border-bottom: 2px solid black;
+}
+.searchForm input::placeholder{
+  color: rgba(0, 0, 0, 0.304);
+  font-size: 15px;
+}
+.searched-user{
+  width: 100%;
+  padding: 2px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgb(11, 0, 0);
+}
+.searched-user:hover{
+  cursor: pointer;
+  background-color: rgba(128, 128, 128, 0.425);
+}
+.searched-user img{
+  padding: 2px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.searched-user span{
+  margin-left: 10px;
+}
+
+
+/* Chat-Lists Section */
+
+
+.sub-user{
+  display: flex;
+  flex-direction: column;
+}
+.sub-user p{
+  margin-left: 10px;
+  margin-top: 3px;
+  font-size: 12px;
+  color: #333;
+}
+
+
+/* Chat-Page */
+
+.chatPage{
+  flex:2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.chatInfo{
+  display: flex;
+  height: 8vh;
+  background: #1c92d2;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #f2fcfe, #1c92d2);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #f2fcfe, #1c92d2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  padding: 5px;
+  width: 100%;
+  align-items: center;
+  font-size: 15px;
+  color: rgb(9, 0, 0);
+  border-bottom: 1px solid gray;
+}
+
+.chatInfo img{
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+}
+
+/* CSS for zoomed image */
+.zoomed-image {
+  transform: scale(1.2); /* Adjust the scale factor for zoom level */
+  transition: transform 0.3s ease; /* Add a smooth transition effect */
+  cursor: pointer; /* Add a pointer cursor to indicate clickability */
+}
+
+
+/* Messages */
+
+.messages{
+  padding: 10px;
+  background-size: 20px 20px;
+  height: 82vh;
+  width: 100%;
+  overflow-y: scroll;
+}
+
+
+
+
+
+/* Input Section */
+.input{
+  height: 10vh;
+  background: #00213232;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #f2fcfe, #1c92d2);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #f2fcfe, #1c92d2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  width: 100%;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 0.5px solid grey;
+}
+.input input{
+  border: none;
+  background: transparent;
+  width: 90%;
+  color: #080000;
+  height: inherit;
+  outline: none;
+  margin: 0px;
+  font-size: 16px;
+}
+
+.send{
+  display: flex;
+  align-items: center;
+}
+.fa-paperclip{
+  margin: 10px;
+} 
+.fa-paper-plane{
+  margin: -3px 10px 0px;
+}
+
+.fa-paperclip:hover{
+  color: white;
+}
+.fa-paper-plane:hover{
+  color: white;
+  cursor: pointer;
+}
+
+
+/* Message Section(User-Messages */
+
+.message{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+.messageInfo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #3333336a;
+  font-size: 12px;
+}
+.messageInfo img{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  align-items: center;
+}
+
+.messageContent{
+  max-width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.messageContent p{
+  background-color: rgb(2, 35, 53);
+  color: white;
+  padding: 8px 20px;
+  border-radius: 0px 10px 10px 10px;
+  max-width: max-content;
+}
+.messageContent img{
+  width: 300px;
+  height: 200px;
+}
+
+
+.owner{
+  flex-direction: row-reverse;
+}
+.owner p{
+  border-radius: 10px 10px 10px 0px;
+  background-color: rgb(2, 35, 53);
+  color: white;
+}
+
+.owner .messageContent{
+  align-items: flex-end;
+}
+
+
+
+
+
+@media (max-width: 576px) {
+  body {
+    /* Adjust styles for smaller screens */
+  }
+
+  .container {
+    /* Adjust styles for smaller screens */
+    width: 90vw; /* Example: Make the container wider for smaller screens */
+  }
+
+  /* Add more responsive styles as needed for other elements */
+  /* For example, you can hide certain elements or reduce padding/margins */
+
+  .input input {
+    width: 80%; /* Adjust input width for smaller screens */
+  }
+
+  /* ... (Other responsive styles) ... */
+}
